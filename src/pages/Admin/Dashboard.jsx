@@ -15,10 +15,11 @@ const Dashboard = () => {
   }, [aToken])
 
   return dashData && (
-    <div className='m-5'>
-      <div className='flex flex-wrap gap-3'>
+    <div className='m-5 w-full'>
+      <div className='flex flex-wrap gap-10'
+    >
 
-        <div className='flex items-center gap-2 bg-white p-4 min-w-52 rounded border-2 border-gray-100 cursor-pointer hover:scale-105 transition-all'>
+        <div className='flex items-center gap-6 bg-white p-3 min-w-60 rounded border-2 border-gray-100 cursor-pointer hover:scale-105 transition-all'>
           <img className='w-14' src={assets.doctor_icon} alt="" />
 
           <div>
@@ -27,7 +28,7 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className='flex items-center gap-2 bg-white p-4 min-w-52 rounded border-2 border-gray-100 cursor-pointer hover:scale-105 transition-all'>
+        <div className='flex items-center gap-6 bg-white p-4 min-w-60 rounded border-2 border-gray-100 cursor-pointer hover:scale-105 transition-all'>
           <img className='w-14' src={assets.appointments_icon} alt="" />
 
           <div>
@@ -36,7 +37,7 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className='flex items-center gap-2 bg-white p-4 min-w-52 rounded border-2 border-gray-100 cursor-pointer hover:scale-105 transition-all'>
+        <div className='flex items-center gap-6 bg-white p-4 min-w-60 rounded border-2 border-gray-100 cursor-pointer hover:scale-105 transition-all'>
           <img className='w-14' src={assets.patients_icon} alt="" />
 
           <div>
@@ -49,7 +50,7 @@ const Dashboard = () => {
 
       <div className='bg-white'>
 
-        <div className='flex items-center gap-2.5 px-4 py-4 mt-10 rounded-t border'>
+        <div className='flex items-center gap-2.5 px-4 py-4 mt-10 rounded-t border' >
           <img src={assets.list_icon} alt="" />
           <p className='font-semibold'>Latest Bookings</p>
         </div>
